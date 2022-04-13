@@ -1,0 +1,1023 @@
+2022-04-11 15:22:03.490 [restartedMain] INFO  net.sppan.base.Application - Starting Application on DESKTOP-EV20Q36 with PID 11724 (E:\Massage\SPPanAdmin\target\classes started by Administrator in E:\Massage\SPPanAdmin)
+2022-04-11 15:22:03.492 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2022-04-11 15:22:03.492 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2022-04-11 15:22:03.582 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2022-04-11 15:22:04.375 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-04-11 15:22:25.426 [Druid-ConnectionPool-Create-989849490] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:25:38.178 [restartedMain] INFO  net.sppan.base.Application - Starting Application on DESKTOP-EV20Q36 with PID 13440 (E:\Massage\SPPanAdmin\target\classes started by Administrator in E:\Massage\SPPanAdmin)
+2022-04-11 15:25:38.180 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2022-04-11 15:25:38.180 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2022-04-11 15:25:38.269 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2022-04-11 15:25:39.080 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-04-11 15:26:00.166 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:26:21.195 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:26:42.224 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:27:03.272 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:27:24.315 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:27:45.379 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:28:06.427 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:28:27.480 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:28:48.547 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:29:09.576 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:29:30.607 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:29:51.641 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:30:12.679 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:30:33.717 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:30:54.743 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:31:15.789 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 15 common frames omitted
+2022-04-11 15:31:36.845 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 14 common frames omitted
+2022-04-11 15:31:57.889 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 14 common frames omitted
+2022-04-11 15:32:18.923 [Druid-ConnectionPool-Create-797567024] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://192.168.1.4:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 14 common frames omitted
+2022-04-11 15:32:39.588 [restartedMain] INFO  net.sppan.base.Application - Starting Application on DESKTOP-EV20Q36 with PID 22240 (E:\Massage\SPPanAdmin\target\classes started by Administrator in E:\Massage\SPPanAdmin)
+2022-04-11 15:32:39.589 [restartedMain] DEBUG net.sppan.base.Application - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2022-04-11 15:32:39.590 [restartedMain] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2022-04-11 15:32:39.684 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2022-04-11 15:32:40.476 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-04-11 15:32:41.455 [restartedMain] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_
+2022-04-11 15:32:41.616 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2022-04-11 15:32:41.617 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2022-04-11 15:32:41.663 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-11 15:32:41.906 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2022-04-11 15:32:41.913 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2022-04-11 15:32:41.913 [restartedMain] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2022-04-11 15:32:41.914 [restartedMain] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: C:\Users\ADMINI~1\AppData\Local\Temp\
+2022-04-11 15:32:41.919 [restartedMain] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with Configuration Object
+2022-04-11 15:32:41.920 [restartedMain] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2022-04-11 15:32:41.923 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2022-04-11 15:32:41.939 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2022-04-11 15:32:41.939 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2022-04-11 15:32:41.939 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2022-04-11 15:32:41.942 [restartedMain] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2022-04-11 15:32:41.942 [restartedMain] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2022-04-11 15:32:41.942 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2022-04-11 15:32:41.942 [restartedMain] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2022-04-11 15:32:41.946 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path C:\Users\ADMINI~1\AppData\Local\Temp
+2022-04-11 15:32:41.946 [restartedMain] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on C:\Users\ADMINI~1\AppData\Local\Temp\.ehcache-diskstore.lock
+2022-04-11 15:32:41.947 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2022-04-11 15:32:41.949 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file C:\Users\ADMINI~1\AppData\Local\Temp\resource%0043ache.index
+2022-04-11 15:32:41.949 [restartedMain] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2022-04-11 15:32:41.967 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2022-04-11 15:32:41.968 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2022-04-11 15:32:41.968 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2022-04-11 15:32:41.968 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2022-04-11 15:32:41.969 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2022-04-11 15:32:41.973 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2022-04-11 15:32:41.974 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2022-04-11 15:32:41.974 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2022-04-11 15:32:41.974 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2022-04-11 15:32:41.974 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2022-04-11 15:32:41.974 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2022-04-11 15:32:41.975 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2022-04-11 15:32:41.975 [restartedMain] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2022-04-11 15:32:41.976 [restartedMain] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2022-04-11 15:32:41.976 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2022-04-11 15:32:41.977 [restartedMain] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2022-04-11 15:32:42.532 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2022-04-11 15:32:42.536 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-80]
+2022-04-11 15:32:42.542 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2022-04-11 15:32:42.551 [restartedMain] INFO  net.sppan.base.Application - Started Application in 3.076 seconds (JVM running for 3.541)
+2022-04-11 15:32:42.551 [restartedMain] DEBUG net.sppan.base.Application - 启动成功
+2022-04-11 15:32:58.589 [http-nio-80-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-04-11 15:33:06.908 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:33:06.955 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:33:06.958 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:33:06.962 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:33:06.967 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:33:06.970 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:33:10.512 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:33:10.513 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:33:10.514 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:33:10.518 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:33:10.521 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:33:10.523 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:33:10.581 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:33:10.612 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:33:10.614 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:33:10.620 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:33:10.622 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:33:15.657 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:33:15.659 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:33:15.661 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:34:28.721 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:34:28.723 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:34:28.724 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:34:28.726 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:34:28.727 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:35:04.776 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:35:04.779 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:35:04.779 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:35:10.156 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?, ?
+2022-04-11 15:35:10.160 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select count(user0_.id) as col_0_0_ from tb_user user0_ where user0_.nick_name like ?
+2022-04-11 15:40:15.537 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:15.539 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:15.540 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:15.543 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:15.545 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:21.711 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:24.487 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:25.582 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:27.747 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:31.907 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:31.909 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:31.910 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:31.913 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:31.915 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:37.893 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:39.123 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:40.889 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:40.891 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:40.892 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:40.895 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:40.897 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:41.854 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:41.857 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:41.858 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:43.615 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:43.618 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:43.619 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:43.621 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:43.622 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:45.631 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:48.306 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:48.309 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:48.311 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:48.314 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:48.315 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:52.469 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_0_, user0_.address as address2_3_0_, user0_.birthday as birthday3_3_0_, user0_.create_time as create_t4_3_0_, user0_.delete_status as delete_s5_3_0_, user0_.description as descript6_3_0_, user0_.email as email7_3_0_, user0_.locked as locked8_3_0_, user0_.nick_name as nick_nam9_3_0_, user0_.password as passwor10_3_0_, user0_.sex as sex11_3_0_, user0_.telephone as telepho12_3_0_, user0_.update_time as update_13_3_0_, user0_.user_name as user_na14_3_0_ from tb_user user0_ where user0_.id=?
+2022-04-11 15:40:56.032 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_0_, user0_.address as address2_3_0_, user0_.birthday as birthday3_3_0_, user0_.create_time as create_t4_3_0_, user0_.delete_status as delete_s5_3_0_, user0_.description as descript6_3_0_, user0_.email as email7_3_0_, user0_.locked as locked8_3_0_, user0_.nick_name as nick_nam9_3_0_, user0_.password as passwor10_3_0_, user0_.sex as sex11_3_0_, user0_.telephone as telepho12_3_0_, user0_.update_time as update_13_3_0_, user0_.user_name as user_na14_3_0_ from tb_user user0_ where user0_.id=?
+2022-04-11 15:40:56.040 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - update tb_user set address=?, birthday=?, create_time=?, delete_status=?, description=?, email=?, locked=?, nick_name=?, password=?, sex=?, telephone=?, update_time=?, user_name=? where id=?
+2022-04-11 15:40:57.846 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:40:57.848 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:57.849 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:40:57.851 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:40:57.852 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:03.656 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:41:05.225 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:41:06.563 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:41:06.565 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:06.566 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:06.568 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:06.570 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:10.200 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:10.201 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:10.202 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:10.204 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:10.206 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:10.207 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:10.304 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 15:41:10.309 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:10.312 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:11.471 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:11.473 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:11.473 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:11.500 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:11.503 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:11.504 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:11.593 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_ where resource0_.name like ? limit ?
+2022-04-11 15:41:11.597 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select count(resource0_.id) as col_0_0_ from tb_resource resource0_ where resource0_.name like ?
+2022-04-11 15:41:12.576 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:12.578 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:12.578 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:12.580 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:12.583 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:12.585 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:12.660 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:41:12.662 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:12.663 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:12.665 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:12.666 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:13.887 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:13.889 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:13.889 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:13.891 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:13.892 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:13.894 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:13.977 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 15:41:13.979 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:13.980 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:18.877 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 15:41:22.009 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 15:41:22.011 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:22.012 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:22.566 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 15:41:23.612 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 15:41:23.614 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:26.102 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 15:41:26.103 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:26.105 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:29.015 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:29.016 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:29.017 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:29.018 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:29.021 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:29.022 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:29.101 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:41:29.103 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:29.104 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:29.105 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:29.106 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:29.736 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:29.737 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:29.737 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:29.739 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:29.741 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:29.743 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:29.825 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 15:41:29.828 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:29.829 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:30.263 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:30.264 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:30.264 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:30.266 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:30.267 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:30.269 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:41:30.355 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 15:41:30.357 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:30.359 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:41:30.362 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:41:30.363 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:59:55.421 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.422 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 15:59:55.423 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 15:59:55.424 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.426 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.428 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.429 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.430 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.431 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.432 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.433 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.434 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.435 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 15:59:55.437 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:35.664 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:35.665 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 16:00:35.666 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:35.667 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:35.669 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:35.671 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:35.738 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.nick_name like ? limit ?
+2022-04-11 16:00:35.740 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 16:00:35.741 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:35.742 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 16:00:35.742 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:36.191 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:36.192 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 16:00:36.193 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:36.194 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:36.195 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:36.196 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:36.271 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 16:00:36.274 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:36.275 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:36.591 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:36.592 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 16:00:36.593 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:36.594 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:36.595 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:36.596 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:36.662 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ where role0_.name like ? or role0_.description like ? limit ?
+2022-04-11 16:00:36.664 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:36.666 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:37.013 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:37.015 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2022-04-11 16:00:37.016 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2022-04-11 16:00:37.019 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:37.021 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:37.023 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2022-04-11 16:00:37.099 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_ where resource0_.name like ? limit ?
+2022-04-11 16:00:37.101 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select count(resource0_.id) as col_0_0_ from tb_resource resource0_ where resource0_.name like ?
