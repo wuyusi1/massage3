@@ -24,16 +24,18 @@ DROP TABLE IF EXISTS `customer`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `customer` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `customername` varchar(45) DEFAULT NULL,
+  `customername` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
   `customersex` int(11) DEFAULT NULL,
   `customernickname` varchar(45) DEFAULT NULL,
-  `customertel` varchar(45) DEFAULT NULL,
-  `customeremail` varchar(45) DEFAULT NULL,
-  `customeraddress` varchar(300) DEFAULT NULL,
-  `customerpwd` varchar(45) DEFAULT NULL,
+  `customertel` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `customeremail` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `customeraddress` varchar(200) DEFAULT NULL,
+  `customerpwd` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
   `customervip` int(11) DEFAULT NULL,
+  `customerdeletestatus` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `customerbirth` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +44,72 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
+INSERT INTO `customer` VALUES (2,'aaaaaa',0,'sssssss','15904450495','1182077634@qq.com','sgahafhdhshshdh','111111',0,'0','2022-04-04 00:00:00'),(3,'wwww',0,'gsdfgsfh','15904450495','1182077634@qq.com','黑龙江省哈尔滨市香坊区和兴路26号东北林业大学','111111',0,'0','2022-04-12 00:00:00'),(4,'fffff',0,'ghsh','15904450495','1182077634@qq.com','黑龙江省哈尔滨市香坊区和兴路26号东北林业大学','111111',1,'0','2022-04-19 00:00:00');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `order`
+--
+
+DROP TABLE IF EXISTS `order`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `order` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `customername` varchar(45) DEFAULT NULL,
+  `customertel` varchar(45) DEFAULT NULL,
+  `createdate` datetime DEFAULT NULL,
+  `updatedate` datetime DEFAULT NULL,
+  `servicename` varchar(45) DEFAULT NULL,
+  `serviceprice` varchar(45) DEFAULT NULL,
+  `massagername` varchar(45) DEFAULT NULL,
+  `orderstatus` int(11) DEFAULT NULL,
+  `orderdeletestatus` int(11) DEFAULT NULL,
+  `customervip` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `order`
+--
+
+LOCK TABLES `order` WRITE;
+/*!40000 ALTER TABLE `order` DISABLE KEYS */;
+/*!40000 ALTER TABLE `order` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `post`
+--
+
+DROP TABLE IF EXISTS `post`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `post` (
+  `idpost` int(11) NOT NULL AUTO_INCREMENT,
+  `postcontent` longtext,
+  `poststatus` int(11) DEFAULT NULL,
+  `postsummary` varchar(2000) DEFAULT NULL,
+  `posttitle` varchar(255) DEFAULT NULL,
+  `price` int(11) DEFAULT NULL,
+  `createtime` datetime DEFAULT NULL,
+  `updatetime` datetime DEFAULT NULL,
+  `createby` varchar(255) DEFAULT NULL,
+  `postto` varchar(255) DEFAULT NULL,
+  `img_url` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`idpost`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `post`
+--
+
+LOCK TABLES `post` WRITE;
+/*!40000 ALTER TABLE `post` DISABLE KEYS */;
+/*!40000 ALTER TABLE `post` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -170,7 +237,7 @@ CREATE TABLE `tb_user` (
 
 LOCK TABLES `tb_user` WRITE;
 /*!40000 ALTER TABLE `tb_user` DISABLE KEYS */;
-INSERT INTO `tb_user` VALUES (1,'成都','2017-01-09 17:26:39','2017-01-09 17:26:41',0,'超级管理员','whoismy8023@163.com',0,'admin','114CNIIUINKMJK72AA1P5807U3',1,'15923930000','2017-01-09 17:27:11','admin'),(2,'eeee','2022-04-28 00:00:00','2022-04-07 18:28:48',0,'无','1@111.com',0,'aaaa','3931MUEQD1939MQMLM4AISPVNE',0,'2','2022-04-11 15:40:56','zhangsan');
+INSERT INTO `tb_user` VALUES (1,'成都','2017-02-04 00:00:00','2017-01-09 17:26:41',0,'超级管理员','whoismy8023@163.com',0,'admin','114CNIIUINKMJK72AA1P5807U3',1,'15923930000','2022-04-13 10:25:35','admin'),(2,'eeee','2022-04-28 00:00:00','2022-04-07 18:28:48',0,'无','1@111.com',0,'aaaa','3931MUEQD1939MQMLM4AISPVNE',0,'2','2022-04-11 15:40:56','zhangsan');
 /*!40000 ALTER TABLE `tb_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -210,4 +277,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-11 16:57:15
+-- Dump completed on 2022-04-14 18:14:47

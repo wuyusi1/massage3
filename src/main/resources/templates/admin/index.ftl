@@ -86,7 +86,7 @@
                     <ul class="nav nav-second-level">
                         <@shiro.hasPermission name="system:user:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/user/index">全部订单</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/order/index">全部订单</a>
                             </li>
                         </@shiro.hasPermission>
                         <@shiro.hasPermission name="system:user:index">
