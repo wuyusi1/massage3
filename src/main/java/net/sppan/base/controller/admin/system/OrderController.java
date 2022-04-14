@@ -1,39 +1,28 @@
 package net.sppan.base.controller.admin.system;
 
 import net.sppan.base.common.JsonResult;
-import net.sppan.base.entity.Customer;
-import net.sppan.base.entity.Role;
-import net.sppan.base.entity.User;
-import net.sppan.base.service.ICustomerService;
-import net.sppan.base.service.impl.CustomerServiceImpl;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.subject.Subject;
+import net.sppan.base.controller.BaseController;
+import net.sppan.base.entity.Order;
+import net.sppan.base.service.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
-
-import net.sppan.base.controller.BaseController;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 @Controller
-@RequestMapping("/admin/customer")
-public class CustomerController extends BaseController{
+@RequestMapping("/admin/order")
+public class OrderController extends BaseController{
     @Autowired
-    ICustomerService customerService;
+    IOrderService orderService;
     @RequestMapping(value = { "/", "/index" })
     public String index() {
-        return "admin/customer/index";
+        return "admin/order/index";
     }
 
     @RequestMapping(value = { "/list" })
     @ResponseBody
-    public Page<Customer> list(
+    public Page<Order> list(
             @RequestParam(value="searchText",required=false) String searchText
     ) {
 //		SimpleSpecificationBuilder<User> builder = new SimpleSpecificationBuilder<User>();
@@ -42,18 +31,18 @@ public class CustomerController extends BaseController{
 //			builder.add("nickName", Operator.likeAll.name(), searchText);
 //		}
         System.out.println("列表");
-        Page<Customer> page = customerService.findAllByLike(searchText, getPageRequest());
+        Page<Order> page =orderService.getByCustomernameContining(searchText, getPageRequest());
         return page;
     }
 
-    @RequestMapping(value = { "/", "/vipcustomer" })
-    public String vipcustomer() {
-        return "admin/customer/vipcustomer";
+    @RequestMapping(value = { "/", "/already" })
+    public String alreadyorder() {
+        return "already";
     }
 
-    @RequestMapping(value = { "/viplist" })
+    @RequestMapping(value = { "/alreadylist" })
     @ResponseBody
-    public Page<Customer> viplist(
+    public Page<Order> alreadylist(
             @RequestParam(value="searchText",required=false) String searchText
     ) {
 //		SimpleSpecificationBuilder<User> builder = new SimpleSpecificationBuilder<User>();
@@ -62,17 +51,17 @@ public class CustomerController extends BaseController{
 //			builder.add("nickName", Operator.likeAll.name(), searchText);
 //		}
         System.out.println("列表");
-        Page<Customer> page = customerService.findAllByvip(searchText,1, getPageRequest());
+        Page<Order> page = orderService.getByOrdertatusAndCustomernameConting(2,searchText, getPageRequest());
         return page;
     }
-    @RequestMapping(value = { "/", "/commoncustomer" })
+    @RequestMapping(value = { "/", "/waitorder" })
     public String commoncustomer() {
-        return "admin/customer/commoncustomer";
+        return "admin/order/waitorder";
     }
 
-    @RequestMapping(value = { "/commonlist" })
+    @RequestMapping(value = { "/waitlist" })
     @ResponseBody
-    public Page<Customer> commonlist(
+    public Page<Order> commonlist(
             @RequestParam(value="searchText",required=false) String searchText
     ) {
 //		SimpleSpecificationBuilder<User> builder = new SimpleSpecificationBuilder<User>();
@@ -81,26 +70,26 @@ public class CustomerController extends BaseController{
 //			builder.add("nickName", Operator.likeAll.name(), searchText);
 //		}
         System.out.println("列表");
-        Page<Customer> page = customerService.findAllByvip(searchText,0, getPageRequest());
+        Page<Order> page = orderService.getByOrdertatusAndCustomernameConting(1,searchText, getPageRequest());
         return page;
     }
-    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add(ModelMap map) {
         return "admin/customer/form";
-    }
+    }*/
 
     @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
-    public String edit(@PathVariable Integer id,ModelMap map) {
-        Customer customer = customerService.find(id);
-        map.put("customer", customer);
-        return "admin/customer/form";
+    public String edit(@PathVariable Integer id, ModelMap map) {
+        Order order = orderService.find(id);
+        map.put("order", order);
+        return "admin/order/form";
     }
 
     @RequestMapping(value= {"/edit"} ,method = RequestMethod.POST)
     @ResponseBody
-    public JsonResult edit(Customer customer,ModelMap map){
+    public JsonResult edit(Order order,ModelMap map){
         try {
-            customerService.saveOrUpdate(customer);
+            orderService.saveOrUpdate(order);
         } catch (Exception e) {
             return JsonResult.failure(e.getMessage());
         }
@@ -111,27 +100,27 @@ public class CustomerController extends BaseController{
     @ResponseBody
     public JsonResult delete(@PathVariable Integer id,ModelMap map) {
         try {
-            customerService.delete(id);
+            orderService.delete(id);
         } catch (Exception e) {
             e.printStackTrace();
             return JsonResult.failure(e.getMessage());
         }
         return JsonResult.success();
     }
-    @RequestMapping(value = "/viptocommon/{id}", method = RequestMethod.POST)
+    @RequestMapping(value = "/waittoalready/{id}", method = RequestMethod.POST)
     @ResponseBody
-    public JsonResult viptocommon(@PathVariable Integer id,ModelMap map) {
+    public JsonResult waittoalreadytocommon(@PathVariable Integer id,ModelMap map) {
         try {
-            Customer customer=customerService.find(id);
-            customer.setCustomervip(0);
-            customerService.saveOrUpdate(customer);
+            Order order=orderService.find(id);
+            order.setOrderstatus(0);
+            orderService.saveOrUpdate(order);
         } catch (Exception e) {
             e.printStackTrace();
             return JsonResult.failure(e.getMessage());
         }
         return JsonResult.success();
     }
-    @RequestMapping(value = "/commontovip/{id}", method = RequestMethod.POST)
+    /*@RequestMapping(value = "/commontovip/{id}", method = RequestMethod.POST)
     @ResponseBody
     public JsonResult commontovip(@PathVariable Integer id,ModelMap map) {
         try {
@@ -143,14 +132,14 @@ public class CustomerController extends BaseController{
             return JsonResult.failure(e.getMessage());
         }
         return JsonResult.success();
-    }
+    }*/
 
-    @RequestMapping(value = "/grant/{id}", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/grant/{id}", method = RequestMethod.GET)
     public String grant(@PathVariable Integer id, ModelMap map) {
         Customer customer = customerService.find(id);
         map.put("customer", customer);
 
-        /*
+        *//*
         Set<Role> set = user.getRoles();
 
         List<Integer> roleIds = new ArrayList<Integer>();
@@ -160,11 +149,11 @@ public class CustomerController extends BaseController{
         map.put("roleIds", roleIds);
 
         List<Role> roles = roleService.findAll();
-        map.put("roles", roles);*/
+        map.put("roles", roles);*//*
         return "admin/customer/grant";
-    }
+    }*/
 
-    @ResponseBody
+    /*@ResponseBody
     @RequestMapping(value = "/grant/{id}", method = RequestMethod.POST)
     public JsonResult grant(@PathVariable Integer id, String[] roleIds, ModelMap map) {
         try {
@@ -174,9 +163,9 @@ public class CustomerController extends BaseController{
             return JsonResult.failure(e.getMessage());
         }
         return JsonResult.success();
-    }
+    }*/
 
-    @RequestMapping(value = "/updatePwd", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/updatePwd", method = RequestMethod.GET)
     public String updatePwd() {
         return "admin/customer/updatePwd";
     }
@@ -196,5 +185,5 @@ public class CustomerController extends BaseController{
             return JsonResult.failure(e.getMessage());
         }
         return JsonResult.success();
-    }
+    }*/
 }

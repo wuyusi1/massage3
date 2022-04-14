@@ -14,6 +14,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
@@ -78,6 +79,14 @@ public class CustomerServiceImpl extends BaseServiceImpl<Customer, Integer> impl
         Assert.isTrue(password1.equals(password2), "两次密码不一致");
         dbCustomer.setCustomerpwd(password1);
         customerDao.saveAndFlush(dbCustomer);
+    }
+
+    @Override
+    public Page<Customer> findAllByvip(String searchText, Integer customervip, Pageable pageable) {
+        if(StringUtils.isBlank(searchText)){
+            searchText = "";
+        }
+        return customerDao.findAllByCustomernicknameContainingAndCustomervip(searchText,customervip,pageable);
     }
 
     @Override

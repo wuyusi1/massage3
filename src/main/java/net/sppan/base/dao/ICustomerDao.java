@@ -15,4 +15,6 @@ public interface ICustomerDao extends IBaseDao<Customer, Integer> {
     Customer findById(Integer id);
 
     Page<Customer> findAllByCustomernicknameContaining(String searchText, Pageable pageable);
+
+    Page<Customer> findAllByCustomernicknameContainingAndCustomervip(String searchText,Integer customervip,Pageable pageable);
 }

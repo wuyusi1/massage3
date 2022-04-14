@@ -115,12 +115,12 @@
                         </@shiro.hasPermission>
                         <@shiro.hasPermission name="system:user:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/user/index">普通顾客</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/customer/commoncustomer">普通顾客</a>
                             </li>
                         </@shiro.hasPermission>
                         <@shiro.hasPermission name="system:role:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/role/index">vip顾客</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/customer/vipcustomer">vip顾客</a>
                             </li>
                         </@shiro.hasPermission>
                     </ul>
@@ -179,6 +179,14 @@
                                 <a onclick="updatePwd()">
                                     <div>
                                         <i class="fa fa-refresh"></i> 修改密码
+                                        <span class="pull-right text-muted small"><@shiro.principal type="net.sppan.base.entity.User" property="userName"/></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="${ctx!}/admin/logout">
+                                    <div>
+                                        <i class="fa fa-remove"></i> 个人中心
                                         <span class="pull-right text-muted small"><@shiro.principal type="net.sppan.base.entity.User" property="userName"/></span>
                                     </div>
                                 </a>

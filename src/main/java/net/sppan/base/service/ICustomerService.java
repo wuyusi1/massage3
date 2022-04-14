@@ -5,6 +5,7 @@ import net.sppan.base.entity.User;
 import net.sppan.base.service.support.IBaseService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 
 
 public interface ICustomerService extends IBaseService<Customer, Integer> {
@@ -39,4 +40,6 @@ public interface ICustomerService extends IBaseService<Customer, Integer> {
      * @param password2
      */
     void updatePwd(Customer customer, String oldPassword, String password1, String password2);
+
+    Page<Customer> findAllByvip(String searchText,Integer customervip,Pageable pageable);
 }
