@@ -113,7 +113,7 @@
 			    //数据列
 			    columns: [{
 			        title: "ID",
-			        field: "订单编号",
+			        field: "id",
 			        sortable: true
 			    },{
 			        title: "顾客名",
@@ -168,7 +168,7 @@
                     formatter: function (value, row, index) {
                     	var operateHtml = '<@shiro.hasPermission name="system:user:edit"><button class="btn btn-primary btn-xs" type="button" onclick="edit(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;修改</button> &nbsp;</@shiro.hasPermission>';
                     	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;删除</button> &nbsp;</@shiro.hasPermission>';
-                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="grant(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;关联角色</button></@shiro.hasPermission>';
+                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="waittoalready(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;提交订单</button></@shiro.hasPermission>';
                         return operateHtml;
                     }
 			    }]
@@ -178,11 +178,11 @@
         function edit(id){
         	layer.open({
         	      type: 2,
-        	      title: '用户修改',
+        	      title: '订单修改',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
-        	      content: '${ctx!}/admin/customer/edit/' + id,
+        	      content: '${ctx!}/admin/order/edit/' + id,
         	      end: function(index){
         	    	  $('#table_list').bootstrapTable("refresh");
        	    	  }
@@ -191,35 +191,37 @@
         function add(){
         	layer.open({
         	      type: 2,
-        	      title: '顾客添加',
+        	      title: '订单添加',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
-        	      content: '${ctx!}/admin/customer/add',
+        	      content: '${ctx!}/admin/order/add',
         	      end: function(index){
         	    	  $('#table_list').bootstrapTable("refresh");
        	    	  }
         	    });
         }
-        function grant(id){
-        	layer.open({
-        	      type: 2,
-        	      title: '关联角色',
-        	      shadeClose: true,
-        	      shade: false,
-        	      area: ['893px', '600px'],
-        	      content: '${ctx!}/admin/customer/grant/'  + id,
-        	      end: function(index){
-        	    	  $('#table_list').bootstrapTable("refresh");
-       	    	  }
-        	    });
+        function waittoalready(id){
+            layer.confirm('确定提交吗?', {icon: 3, title:'提交'}, function(index){
+                $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url: "${ctx!}/admin/order/waittoalready/" + id,
+                    success: function(msg){
+                        layer.msg(msg.message, {time: 2000},function(){
+                            $('#table_list').bootstrapTable("refresh");
+                            layer.close(index);
+                        });
+                    }
+                });
+            });
         }
         function del(id){
         	layer.confirm('确定删除吗?', {icon: 3, title:'提示'}, function(index){
         		$.ajax({
     	    		   type: "POST",
     	    		   dataType: "json",
-    	    		   url: "${ctx!}/admin/customer/delete/" + id,
+    	    		   url: "${ctx!}/admin/order/delete/" + id,
     	    		   success: function(msg){
 	 	   	    			layer.msg(msg.message, {time: 2000},function(){
 	 	   	    				$('#table_list').bootstrapTable("refresh");

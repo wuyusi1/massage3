@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>顾客列表</title>
+    <title>未完成订单</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -29,7 +29,7 @@
         <div class="col-sm-12">
             <div class="ibox ">
                 <div class="ibox-title">
-                    <h5>顾客管理</h5>
+                    <h5>订单管理</h5>
                 </div>
                 <div class="ibox-content">
                     <p>
@@ -82,7 +82,7 @@
             //必须设置，不然request.getParameter获取不到请求参数
             contentType: "application/x-www-form-urlencoded",
             //获取数据的Servlet地址
-            url: "${ctx!}/admin/customer/commonlist",
+            url: "${ctx!}/admin/order/waitlist",
             //表格显示条纹
             striped: true,
             //启动分页
@@ -119,39 +119,10 @@
                 title: "顾客名",
                 field: "customername"
             },{
-                title: "昵称",
-                field: "customernickname"
-            },{
-                title: "性别",
-                field: "customersex",
-                formatter: function(value, row, index) {
-                    if (value == '0')
-                        return '<span class="label label-warning">女</span>';
-                    return '<span class="label label-primary">男</span>';
-                }
-            },{
-                title: "出生日期",
-                field: "customerbirth"
-            },{
-                title: "电话",
+                title: "顾客电话",
                 field: "customertel"
             },{
-                title: "邮箱",
-                field: "customeremail"
-            },{
-                title: "状态",
-                sortable: true,
-                field: "customerdeletestatus",
-                formatter: function (value, row, index) {
-                    if (value == '0')
-                        return '<span class="label label-info">未删除</span>';
-                    return '<span class="label label-danger">已删除</span>';
-                }
-            },{
-                title: "地址",
-                field: "customeraddress",
-            },{
-                title: "会员",
+                title: "顾客vip",
                 field: "customervip",
                 formatter: function (value, row, index) {
                     if (value == '0')
@@ -159,12 +130,45 @@
                     return '<span class="label label-white">会员</span>';
                 }
             },{
+                title: "创建时间",
+                field: "createdate"
+            },{
+                title: "更新时间",
+                field: "updatedate"
+            },{
+                title: "服务项目",
+                field: "servicename"
+            },{
+                title: "服务价格",
+                field: "serviceprice"
+            },{
+                title: "按摩师",
+                field: "massagername"
+            },{
+                title: "订单状态",
+                sortable: true,
+                field: "orderstatus",
+                formatter: function (value, row, index) {
+                    if (value == '1')
+                        return '<span class="label label-info">未完成</span>';
+                    return '<span class="label label-danger">已完成</span>';
+                }
+            },{
+                title: "删除状态",
+                sortable: true,
+                field: "orderdeletestatus",
+                formatter: function (value, row, index) {
+                    if (value == '0')
+                        return '<span class="label label-info">未删除</span>';
+                    return '<span class="label label-danger">已删除</span>';
+                }
+            },{
                 title: "操作",
                 field: "empty",
                 formatter: function (value, row, index) {
                     var operateHtml = '<@shiro.hasPermission name="system:user:edit"><button class="btn btn-primary btn-xs" type="button" onclick="edit(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;修改</button> &nbsp;</@shiro.hasPermission>';
                     operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;删除</button> &nbsp;</@shiro.hasPermission>';
-                    operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="commontovip(\''+row.id+'\')"><i class="fa fa-user-md"></i>&nbsp;加入会员</button></@shiro.hasPermission>';
+                    operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="waittoalready(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;提交订单</button></@shiro.hasPermission>';
                     return operateHtml;
                 }
             }]
@@ -174,11 +178,11 @@
     function edit(id){
         layer.open({
             type: 2,
-            title: '用户修改',
+            title: '订单修改',
             shadeClose: true,
             shade: false,
             area: ['893px', '600px'],
-            content: '${ctx!}/admin/customer/edit/' + id,
+            content: '${ctx!}/admin/order/edit/' + id,
             end: function(index){
                 $('#table_list').bootstrapTable("refresh");
             }
@@ -187,27 +191,29 @@
     function add(){
         layer.open({
             type: 2,
-            title: '顾客添加',
+            title: '订单添加',
             shadeClose: true,
             shade: false,
             area: ['893px', '600px'],
-            content: '${ctx!}/admin/customer/add',
+            content: '${ctx!}/admin/order/add',
             end: function(index){
                 $('#table_list').bootstrapTable("refresh");
             }
         });
     }
-    function grant(id){
-        layer.open({
-            type: 2,
-            title: '关联角色',
-            shadeClose: true,
-            shade: false,
-            area: ['893px', '600px'],
-            content: '${ctx!}/admin/customer/grant/'  + id,
-            end: function(index){
-                $('#table_list').bootstrapTable("refresh");
-            }
+    function waittoalready(id){
+        layer.confirm('确定提交吗?', {icon: 3, title:'提交'}, function(index){
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "${ctx!}/admin/order/waittoalready/" + id,
+                success: function(msg){
+                    layer.msg(msg.message, {time: 2000},function(){
+                        $('#table_list').bootstrapTable("refresh");
+                        layer.close(index);
+                    });
+                }
+            });
         });
     }
     function del(id){
@@ -215,7 +221,7 @@
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "${ctx!}/admin/customer/delete/" + id,
+                url: "${ctx!}/admin/order/delete/" + id,
                 success: function(msg){
                     layer.msg(msg.message, {time: 2000},function(){
                         $('#table_list').bootstrapTable("refresh");
@@ -225,21 +231,7 @@
             });
         });
     }
-    function commontovip(id){
-        layer.confirm('确定加入会员吗?', {icon: 2, title:'提示'}, function(index){
-            $.ajax({
-                type: "POST",
-                dataType: "json",
-                url: "${ctx!}/admin/customer/commontovip/" + id,
-                success: function(msg){
-                    layer.msg(msg.message, {time: 2000},function(){
-                        $('#table_list').bootstrapTable("refresh");
-                        layer.close(index);
-                    });
-                }
-            });
-        });
-    }
+
     function detailFormatter(index, row) {
         var html = [];
         html.push('<p><b>描述:</b> ' + row.description + '</p>');

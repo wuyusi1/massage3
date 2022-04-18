@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface IOrderDao extends IBaseDao<Order,Integer> {
-    Page<Order> getAllByOrderstatusAndCustomernameContaining(Integer orderstatus, String searchText, Pageable pageable);
-    Page<Order> getAllByCustomernameContaining(String searchText, Pageable pageable);
+    Page<Order> findAllByOrderstatusAndCustomernameContaining(Integer orderstatus, String searchText, Pageable pageable);
+    Page<Order> findAllByCustomernameContainingAndOrderstatusGreaterThan(String searchText,Integer orderStatus,Pageable pageable);
 }

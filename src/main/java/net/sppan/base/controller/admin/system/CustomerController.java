@@ -88,7 +88,9 @@ public class CustomerController extends BaseController{
     public String add(ModelMap map) {
         return "admin/customer/form";
     }
-
+    //管理员只能对订单状态进行更改（从未完成到已完成）
+    //可以在已下单但未支付时对订单信息（顾客名，顾客电话）进行更改
+    //顾客可以将订单从未支付变成未完成，从未完成更新到已完成
     @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
     public String edit(@PathVariable Integer id,ModelMap map) {
         Customer customer = customerService.find(id);

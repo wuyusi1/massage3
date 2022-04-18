@@ -35,7 +35,7 @@ CREATE TABLE `customer` (
   `customerdeletestatus` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
   `customerbirth` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,40 +44,37 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (2,'aaaaaa',0,'sssssss','15904450495','1182077634@qq.com','sgahafhdhshshdh','111111',0,'0','2022-04-04 00:00:00'),(3,'wwww',0,'gsdfgsfh','15904450495','1182077634@qq.com','黑龙江省哈尔滨市香坊区和兴路26号东北林业大学','111111',0,'0','2022-04-12 00:00:00'),(4,'fffff',0,'ghsh','15904450495','1182077634@qq.com','黑龙江省哈尔滨市香坊区和兴路26号东北林业大学','111111',1,'0','2022-04-19 00:00:00');
+INSERT INTO `customer` VALUES (2,'aaaaaa',0,'sssssss','15904450495','1182077634@qq.com','sgahafhdhshshdh','111111',0,'0','2022-04-04 00:00:00'),(5,'aaa',1,'1','123125454',NULL,NULL,'111111',NULL,'0',NULL),(6,'www',0,NULL,'15904450495',NULL,NULL,'111111',NULL,'0',NULL),(7,'www',0,NULL,'15904450495',NULL,NULL,'111111',NULL,'0',NULL);
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `order`
+-- Table structure for table `massager`
 --
 
-DROP TABLE IF EXISTS `order`;
+DROP TABLE IF EXISTS `massager`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `order` (
+CREATE TABLE `massager` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `customername` varchar(45) DEFAULT NULL,
-  `customertel` varchar(45) DEFAULT NULL,
-  `createdate` datetime DEFAULT NULL,
-  `updatedate` datetime DEFAULT NULL,
-  `servicename` varchar(45) DEFAULT NULL,
-  `serviceprice` varchar(45) DEFAULT NULL,
   `massagername` varchar(45) DEFAULT NULL,
-  `orderstatus` int(11) DEFAULT NULL,
-  `orderdeletestatus` int(11) DEFAULT NULL,
-  `customervip` int(11) DEFAULT NULL,
+  `massagertel` varchar(45) DEFAULT NULL,
+  `massagersex` varchar(45) DEFAULT NULL,
+  `massagerage` int(11) DEFAULT NULL,
+  `massagerjob` varchar(45) DEFAULT NULL,
+  `massagerinfo` varchar(2000) DEFAULT NULL,
+  `massagerdeletestatus` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `order`
+-- Dumping data for table `massager`
 --
 
-LOCK TABLES `order` WRITE;
-/*!40000 ALTER TABLE `order` DISABLE KEYS */;
-/*!40000 ALTER TABLE `order` ENABLE KEYS */;
+LOCK TABLES `massager` WRITE;
+/*!40000 ALTER TABLE `massager` DISABLE KEYS */;
+/*!40000 ALTER TABLE `massager` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -110,6 +107,39 @@ CREATE TABLE `post` (
 LOCK TABLES `post` WRITE;
 /*!40000 ALTER TABLE `post` DISABLE KEYS */;
 /*!40000 ALTER TABLE `post` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_order`
+--
+
+DROP TABLE IF EXISTS `tb_order`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tb_order` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `customername` varchar(45) DEFAULT NULL,
+  `customertel` varchar(45) DEFAULT NULL,
+  `createdate` datetime DEFAULT NULL,
+  `updatedate` datetime DEFAULT NULL,
+  `servicename` varchar(45) DEFAULT NULL,
+  `serviceprice` varchar(45) DEFAULT NULL,
+  `massagername` varchar(45) DEFAULT NULL,
+  `orderstatus` int(11) DEFAULT NULL,
+  `orderdeletestatus` int(11) DEFAULT NULL,
+  `customervip` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_order`
+--
+
+LOCK TABLES `tb_order` WRITE;
+/*!40000 ALTER TABLE `tb_order` DISABLE KEYS */;
+INSERT INTO `tb_order` VALUES (1,'aaa','123125454','2022-04-11 00:00:00','2022-04-18 15:11:35','dfs','12','qqq',1,0,NULL),(2,'aaa','123125454','2022-04-17 00:00:00','2022-04-18 17:00:27','dfs','333','www',2,0,NULL),(4,'aaa','123125454','2022-04-18 00:00:00','2022-04-18 16:37:19','dfs','33','eee',2,0,0),(5,'www','15904450495','2022-04-18 15:14:05',NULL,'eee','12','rrr',0,0,NULL),(6,'www','15904450495','2022-04-18 15:17:03','2022-04-18 15:17:03','www','55','rrr',0,0,NULL),(7,'www','15904450495','2022-04-18 15:48:28','2022-04-18 15:48:28','rrr','78','ddd',0,0,NULL),(8,'www','15904450495','2022-04-18 15:50:07','2022-04-18 15:50:07','rrr','78','iii',0,0,NULL),(9,'yyy','15904450495','2022-04-18 16:09:40','2022-04-18 16:09:40','ooo','66','iii',0,0,NULL),(10,'yyy','15904450495','2022-04-18 16:10:09','2022-04-18 16:10:09','uuu','88','ooo',0,0,0),(11,'qqq','15904450495','2022-04-18 16:18:05','2022-04-18 16:18:06','eee','88','uuu',0,0,0);
+/*!40000 ALTER TABLE `tb_order` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -277,4 +307,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-14 18:14:47
+-- Dump completed on 2022-04-18 18:24:20

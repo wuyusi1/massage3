@@ -4,19 +4,20 @@ import com.alibaba.fastjson.annotation.JSONField;
 import net.sppan.base.entity.support.BaseEntity;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 import java.sql.Timestamp;
 
 @Entity
+@Table(name = "tb_order")
 public class Order extends BaseEntity {
     private Integer id;
     private String customername;
     private String customertel;
 
-    @JSONField(format = "yyyy-MM-dd")
+    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private Date createdate;
 
-    @JSONField(format = "yyyy-MM-dd")
+    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private Date updatedate;
 
     private String servicename;

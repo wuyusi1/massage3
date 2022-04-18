@@ -2,6 +2,7 @@ package net.sppan.base.controller.admin.system;
 
 import net.sppan.base.common.JsonResult;
 import net.sppan.base.controller.BaseController;
+import net.sppan.base.entity.Customer;
 import net.sppan.base.entity.Order;
 import net.sppan.base.service.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,13 +32,13 @@ public class OrderController extends BaseController{
 //			builder.add("nickName", Operator.likeAll.name(), searchText);
 //		}
         System.out.println("列表");
-        Page<Order> page =orderService.getByCustomernameContining(searchText, getPageRequest());
+        Page<Order> page =orderService.findAllByCustomernameContining(searchText,0, getPageRequest());
         return page;
     }
 
-    @RequestMapping(value = { "/", "/already" })
+    @RequestMapping(value = { "/already" })
     public String alreadyorder() {
-        return "already";
+        return "admin/order/already";
     }
 
     @RequestMapping(value = { "/alreadylist" })
@@ -51,17 +52,17 @@ public class OrderController extends BaseController{
 //			builder.add("nickName", Operator.likeAll.name(), searchText);
 //		}
         System.out.println("列表");
-        Page<Order> page = orderService.getByOrdertatusAndCustomernameConting(2,searchText, getPageRequest());
+        Page<Order> page = orderService.findAllByOrdertatusAndCustomernameConting(2,searchText, getPageRequest());
         return page;
     }
-    @RequestMapping(value = { "/", "/waitorder" })
-    public String commoncustomer() {
+    @RequestMapping(value = {  "/waitindex" })
+    public String waitorder() {
         return "admin/order/waitorder";
     }
 
     @RequestMapping(value = { "/waitlist" })
     @ResponseBody
-    public Page<Order> commonlist(
+    public Page<Order> waitlist(
             @RequestParam(value="searchText",required=false) String searchText
     ) {
 //		SimpleSpecificationBuilder<User> builder = new SimpleSpecificationBuilder<User>();
@@ -70,14 +71,17 @@ public class OrderController extends BaseController{
 //			builder.add("nickName", Operator.likeAll.name(), searchText);
 //		}
         System.out.println("列表");
-        Page<Order> page = orderService.getByOrdertatusAndCustomernameConting(1,searchText, getPageRequest());
+        Page<Order> page = orderService.findAllByOrdertatusAndCustomernameConting(1,searchText, getPageRequest());
         return page;
     }
     /*@RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add(ModelMap map) {
         return "admin/customer/form";
     }*/
-
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public String add(ModelMap map) {
+        return "admin/order/form";
+    }
     @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
     public String edit(@PathVariable Integer id, ModelMap map) {
         Order order = orderService.find(id);
@@ -111,8 +115,8 @@ public class OrderController extends BaseController{
     @ResponseBody
     public JsonResult waittoalreadytocommon(@PathVariable Integer id,ModelMap map) {
         try {
-            Order order=orderService.find(id);
-            order.setOrderstatus(0);
+            Order order = orderService.find(id);
+            order.setOrderstatus(2);
             orderService.saveOrUpdate(order);
         } catch (Exception e) {
             e.printStackTrace();
@@ -120,6 +124,7 @@ public class OrderController extends BaseController{
         }
         return JsonResult.success();
     }
+
     /*@RequestMapping(value = "/commontovip/{id}", method = RequestMethod.POST)
     @ResponseBody
     public JsonResult commontovip(@PathVariable Integer id,ModelMap map) {

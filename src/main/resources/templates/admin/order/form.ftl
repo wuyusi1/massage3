@@ -24,72 +24,85 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>请输入顾客信息</h5>
+                        <h5>订单信息</h5>
                     </div>
                     <div class="ibox-content">
-                        <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/customer/edit">
-                        	<input type="hidden" id="id" name="id" value="${customer.id}">
+                        <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/order/edit">
+                        	<!-- <input type="hidden" id="id" name="id" value="${customer.id}"> -->
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">账户名：</label>
+                                <label class="col-sm-3 control-label">订单编号：</label>
                                 <div class="col-sm-8">
-                                    <input id="customername" name="customername" class="form-control" type="text" value="${customer.customername}" <#if customer?exists> readonly="readonly"</#if> >
+                                    <input id="id" name="id" class="form-control" type="text" value="${order.id}" readonly="readonly">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">昵称：</label>
+                                <label class="col-sm-3 control-label">顾客用户名：</label>
                                 <div class="col-sm-8">
-                                    <input id="customernickname" name="customernickname" class="form-control" type="text" value="${customer.customernickname}">
+                                    <input id="customername" name="customername" class="form-control" type="text" value="${order.customername}" <#if order?exists> readonly="readonly"</#if> >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">性别：</label>
+                                <label class="col-sm-3 control-label">顾客电话</label>
                                 <div class="col-sm-8">
-                                	<select name="customersex" class="form-control">
-                                		<option value="0" <#if customer.customersex == 0>selected="selected"</#if>>女</option>
-                                		<option value="1" <#if customer.customersex == 1>selected="selected"</#if>>男</option>
+                                    <input id="customertel" name="customertel" class="form-control" value="${order.customertel}" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">是否会员</label>
+                                <div class="col-sm-8">
+                                	<select name="customervip" class="form-control" readonly="readonly" >
+                                		<option value="0" <#if order.customervip == 0>selected="selected"</#if>>非会员</option>
+                                		<option value="1" <#if order.customervip == 1>selected="selected"</#if>>会员</option>
                                 	</select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">出生日期：</label>
+                                <label class="col-sm-3 control-label">服务项目：</label>
                                 <div class="col-sm-8">
-                                    <input id="customerbirth" name="customerbirth" readonly="readonly" class="laydate-icon form-control layer-date" type="date"  value="${customer.customerbirth}">
+                                    <input id="servicename" name="servicename" class="form-control" type="text" value="${order.servicename}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">电话：</label>
+                                <label class="col-sm-3 control-label">服务价格：</label>
                                 <div class="col-sm-8">
-                                    <input id="customertel" name="customertel" class="form-control" value="${customer.customertel}">
+                                    <input id="serviceprice" name="serviceprice" class="form-control" type="text" value="${order.serviceprice}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">E-mail：</label>
+                                <label class="col-sm-3 control-label">按摩师：</label>
                                 <div class="col-sm-8">
-                                    <input id="customeremail" name="customeremail" class="form-control" value="${customer.customeremail}">
+                                    <input id="massagername" name="massagername" class="form-control" type="text" value="${order.massagername}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">地址：</label>
+                                <label class="col-sm-3 control-label">订单状态：</label>
                                 <div class="col-sm-8">
-                                    <input id="customeraddress" name="customeraddress" class="form-control" value="${customer.customeraddress}">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">会员：</label>
-                                <div class="col-sm-8">
-                                    <select name="customervip" class="form-control">
-                                        <option value="0" <#if customer.customervip == 0>selected="selected"</#if>>非会员</option>
-                                        <option value="1" <#if customer.customervip == 1>selected="selected"</#if>>会员</option>
+                                    <select name="orderstatus" class="form-control" >
+                                        <option value="0" <#if order.orderstatus == 0>selected="selected"</#if>>未支付</option>
+                                        <option value="1" <#if order.orderstatus == 1>selected="selected"</#if>>未完成</option>
+                                        <option value="2" <#if order.orderstatus == 2>selected="selected"</#if>>已完成</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">状态：</label>
+                                <label class="col-sm-3 control-label">删除状态：</label>
                                 <div class="col-sm-8">
-                                	<select name="customerdeletestatus" class="form-control">
-                                		<option value="0" <#if customer.customerdeletestatus == 0>selected="selected"</#if>>未删除</option>
-                                		<option value="1" <#if customer.customerdeletestatus == 1>selected="selected"</#if>>已删除</option>
+                                	<select name="orderdeletestatus" class="form-control" readonly="readonly">
+                                		<option value="0" <#if order.orderdeletestatus == 0>selected="selected"</#if>>未删除</option>
+                                		<option value="1" <#if order.orderdeletestatus == 1>selected="selected"</#if>>已删除</option>
                                 	</select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">创建时间：</label>
+                                <div class="col-sm-8">
+                                    <input id="createdate" name="createdate"  class="laydate-icon form-control layer-date" value="${order.createdate}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">更新时间：</label>
+                                <div class="col-sm-8">
+                                    <input id="updatedate" name="updatedate" class="laydate-icon form-control layer-date"   value="${order.updatedate}">
                                 </div>
                             </div>
                             <!--<div class="form-group">
@@ -128,41 +141,49 @@
     $(document).ready(function () {
 	  	//外部js调用
 	    laydate({
-	        elem: '#customerbirth', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+	        elem: '#createdate', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
 	        event: 'focus' //响应事件。如果没有传入event，则按照默认的click
 	    });
+        laydate({
+            elem: '#updatedate', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+            event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+        });
 
 	    $("#frm").validate({
     	    rules: {
-    	    	customername: {
+    	    	id: {
+    	        required: false,
+    	      },
+    	      	customername: {
     	        required: true,
-    	        minlength: 4,
-    	    	maxlength: 10
-    	      },
-    	      	customernickname: {
-    	        required: true,
-    	        minlength: 4,
-    	    	maxlength: 10
-    	      },
-    	      	customersex: {
-    	        required: true
-    	      },
-    	      	customerbirth: {
-    	      	date:true,
-    	        required: true
     	      },
     	      	customertel: {
     	        required: true
     	      },
-    	      	customeremail: {
-    	      	email:true,
+                customervip: {
+                    required: true
+                },
+                servicename: {
+                    required: true
+                },
+                massagername: {
+                    required: true
+                },
+                serviceprice: {
+                    required: true
+                },
+    	      	createdate: {
+    	      	date:true,
+
+    	      },
+                updatedate: {
+                    date:true,
+
+                },
+    	      	orderstatus: {
     	        required: true
     	      },
-    	      	customeraddress: {
-    	        required: true,
-    	        maxlength: 40
-    	      },
-    	      	customerdeletestatus: {
+    	      	orderdeletestatus: {
     	        required: true
     	      }
     	    },
@@ -171,7 +192,7 @@
     	    	$.ajax({
    	    		   type: "POST",
    	    		   dataType: "json",
-   	    		   url: "${ctx!}/admin/customer/edit",
+   	    		   url: "${ctx!}/admin/order/edit",
    	    		   data: $(form).serialize(),
    	    		   success: function(msg){
 	   	    			layer.msg(msg.message, {time: 2000},function(){

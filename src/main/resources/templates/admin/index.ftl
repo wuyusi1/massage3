@@ -91,12 +91,12 @@
                         </@shiro.hasPermission>
                         <@shiro.hasPermission name="system:user:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/user/index">已完成</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/order/waitindex">未完成</a>
                             </li>
                         </@shiro.hasPermission>
                         <@shiro.hasPermission name="system:role:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/role/index">待使用</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/order/already">已完成</a>
                             </li>
                         </@shiro.hasPermission>
                     </ul>
