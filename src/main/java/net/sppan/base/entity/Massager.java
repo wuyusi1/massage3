@@ -1,11 +1,13 @@
 package net.sppan.base.entity;
 
+import net.sppan.base.entity.support.BaseEntity;
+
 import javax.persistence.*;
 
 @Table(name="massager")
 @Entity
-public class Massager {
-    private int id;
+public class Massager extends BaseEntity {
+    private Integer id;
     private String massagername;
     private String massagertel;
     private String massagersex;
@@ -17,11 +19,11 @@ public class Massager {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

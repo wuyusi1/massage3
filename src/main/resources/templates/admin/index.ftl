@@ -139,7 +139,7 @@
                         </@shiro.hasPermission>
                         <@shiro.hasPermission name="system:user:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/user/index">技师管理</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/massager/index">技师管理</a>
                             </li>
                         </@shiro.hasPermission>
                     </ul>
