@@ -35,7 +35,7 @@ CREATE TABLE `customer` (
   `customerdeletestatus` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
   `customerbirth` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (2,'aaaaaa',0,'sssssss','15904450495','1182077634@qq.com','sgahafhdhshshdh','111111',0,'0','2022-04-04 00:00:00'),(5,'aaa',1,'1','123125454',NULL,NULL,'111111',NULL,'0',NULL),(6,'www',0,NULL,'15904450495',NULL,NULL,'111111',NULL,'0',NULL),(7,'www',0,NULL,'15904450495',NULL,NULL,'111111',NULL,'0',NULL);
+INSERT INTO `customer` VALUES (2,'aaaaaa',0,'sssssss','15904450495','1182077634@qq.com','sgahafhdhshshdh','111111',0,'0','2022-04-04 00:00:00'),(5,'aaa',1,'1','15904450495','1182077634@qq.com','黑龙江省哈尔滨市香坊区和兴路26号东北林业大学','111111',1,'0','2022-04-20 00:00:00'),(6,'www',0,NULL,'15904450495',NULL,NULL,'111111',NULL,'0',NULL),(7,'www',0,NULL,'15904450495',NULL,NULL,'111111',NULL,'0',NULL),(8,'www',0,'ttt','12232324576','123@qq.com','xx省xxx市','111111',1,'0','2022-04-15 00:00:00');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -65,7 +65,7 @@ CREATE TABLE `massager` (
   `massagerinfo` varchar(2000) DEFAULT NULL,
   `massagerdeletestatus` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,6 +74,7 @@ CREATE TABLE `massager` (
 
 LOCK TABLES `massager` WRITE;
 /*!40000 ALTER TABLE `massager` DISABLE KEYS */;
+INSERT INTO `massager` VALUES (1,'张三','19945678432','1',28,'肩颈推拿','呱呱呱呱呱',0),(2,'李四','12233224454','0',25,'针灸','从业xx年...',0);
 /*!40000 ALTER TABLE `massager` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -107,6 +108,62 @@ CREATE TABLE `post` (
 LOCK TABLES `post` WRITE;
 /*!40000 ALTER TABLE `post` DISABLE KEYS */;
 /*!40000 ALTER TABLE `post` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `service`
+--
+
+DROP TABLE IF EXISTS `service`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `service` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `servicename` varchar(255) DEFAULT NULL,
+  `serviceinfo` varchar(45) DEFAULT NULL,
+  `serviceprice` int(11) DEFAULT NULL,
+  `servicefunc` varchar(45) DEFAULT NULL,
+  `servicetag` varchar(45) DEFAULT NULL,
+  `servicehavesaved` int(11) DEFAULT NULL,
+  `servicedeletestatus` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `service`
+--
+
+LOCK TABLES `service` WRITE;
+/*!40000 ALTER TABLE `service` DISABLE KEYS */;
+INSERT INTO `service` VALUES (1,'至尊养生按摩spa','全身推拿20分钟',67,'调理气机，静心助眠','放松',34,0),(2,'针灸','针灸20分钟',54,'舒筋活血',NULL,44,0);
+/*!40000 ALTER TABLE `service` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `serviceimg`
+--
+
+DROP TABLE IF EXISTS `serviceimg`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `serviceimg` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `imgname` varchar(45) DEFAULT NULL,
+  `imgpath` varchar(255) DEFAULT NULL,
+  `imgdate` datetime DEFAULT NULL,
+  `serviceid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `serviceimg`
+--
+
+LOCK TABLES `serviceimg` WRITE;
+/*!40000 ALTER TABLE `serviceimg` DISABLE KEYS */;
+/*!40000 ALTER TABLE `serviceimg` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -307,4 +364,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-18 18:24:20
+-- Dump completed on 2022-04-20 18:36:12
