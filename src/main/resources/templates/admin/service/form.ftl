@@ -24,56 +24,54 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>技师信息</h5>
+                        <h5>服务信息</h5>
                     </div>
                     <div class="ibox-content">
-                        <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/massager/edit">
-                            <input type="hidden" id="id" name="id" value="${massager.id}">
+                        <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/service/edit">
+                            <input type="hidden" id="id" name="id" value="${sservice.id}">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">技师名：</label>
+                                <label class="col-sm-3 control-label">服务名称：</label>
                                 <div class="col-sm-8">
-                                    <input id="massagername" name="massagername" class="form-control" type="text" value="${massager.massagername}" <#if user?exists> readonly="readonly"</#if> >
+                                    <input id="servicename" name="servicename" class="form-control" type="text" value="${sservice.servicename}" <#if user?exists> readonly="readonly"</#if> >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">性别：</label>
+                                <label class="col-sm-3 control-label">服务简介：</label>
                                 <div class="col-sm-8">
-                                    <select name="massagersex" class="form-control">
-                                        <option value="0" <#if massager.massagersex == 0>selected="selected"</#if>>女</option>
-                                        <option value="1" <#if massager.massagersex == 1>selected="selected"</#if>>男</option>
-                                    </select>
+                                    <textarea id="serviceinfo" name="serviceinfo" class="form-control" value="${sservice.serviceinfo}">${sservice.serviceinfo}</textarea>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">年龄：</label>
+                                <label class="col-sm-3 control-label">服务价格：</label>
                                 <div class="col-sm-8">
-                                    <input id="massagerage" name="massagerage" class="form-control" value="${massager.massagerage}">
+                                    <input id="serviceprice" name="serviceprice" class="form-control" value="${sservice.serviceprice}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">电话：</label>
+                                <label class="col-sm-3 control-label">服务功效：</label>
                                 <div class="col-sm-8">
-                                    <input id="massagertel" name="massagertel" class="form-control" value="${massager.massagertel}">
+                                    <textarea id="servicefunc" name="servicefunc" class="form-control" value="${sservice.servicefunc}">${sservice.servicefunc}</textarea>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">职位：</label>
+                                <label class="col-sm-3 control-label">服务标签：</label>
                                 <div class="col-sm-8">
-                                    <input id="massagerjob" name="massagerjob" class="form-control" value="${massager.massagerjob}">
+                                    <input id="servicetag" name="servcietag" class="form-control" value="${sservice.servicetag}">
                                 </div>
                             </div>
+                            <input type="hidden" id="servicetag" name="servicetag" value="${sservice.servicetag}">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">简介：</label>
+                                <label class="col-sm-3 control-label">已售：</label>
                                 <div class="col-sm-8">
-                                    <textarea id="massagerinfo" name="massagerinfo" class="form-control" value="${massager.massagerinfo}">${massager.massagerinfo}</textarea>
+                                    <input id="servicehavesaved" name="servicehavesaved" class="form-control" value="${sservice.servicehavesaved}">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">状态：</label>
                                 <div class="col-sm-8">
-                                    <select name="massagerdeletestatus" class="form-control">
-                                        <option value="0" <#if massager.massagerdeletestatus == 0>selected="selected"</#if>>未删除</option>
-                                        <option value="1" <#if massager.massagerdeletestatus == 1>selected="selected"</#if>>已删除</option>
+                                    <select name="servicedeletestatus" class="form-control">
+                                        <option value="0" <#if sservice.servicedeletestatus == 0>selected="selected"</#if>>未删除</option>
+                                        <option value="1" <#if sservice.servicedeletestatus == 1>selected="selected"</#if>>已删除</option>
                                     </select>
                                 </div>
                             </div>
@@ -110,19 +108,19 @@
     	    	id: {
     	        required: false,
     	      },
-    	      	massagername: {
+    	      	serviceinfo: {
     	        required: true,
     	      },
-    	      	massagertel: {
+    	      	serviceprice: {
     	        required: true
     	      },
-                massagersex: {
+                servicefunc: {
                     required: true
                 },
-                massagerjob: {
+                servicetag: {
                     required: true
                 },
-                massagerdeletestatus: {
+                servicedeletestatus: {
                     required: true
                 }
     	    },
@@ -131,7 +129,7 @@
     	    	$.ajax({
    	    		   type: "POST",
    	    		   dataType: "json",
-   	    		   url: "${ctx!}/admin/massager/edit",
+   	    		   url: "${ctx!}/admin/service/edit",
    	    		   data: $(form).serialize(),
    	    		   success: function(msg){
 	   	    			layer.msg(msg.message, {time: 2000},function(){

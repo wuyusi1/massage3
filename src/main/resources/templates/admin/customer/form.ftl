@@ -136,12 +136,10 @@
     	    rules: {
     	    	customername: {
     	        required: true,
-    	        minlength: 4,
     	    	maxlength: 10
     	      },
     	      	customernickname: {
     	        required: true,
-    	        minlength: 4,
     	    	maxlength: 10
     	      },
     	      	customersex: {

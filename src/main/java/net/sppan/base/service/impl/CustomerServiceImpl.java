@@ -39,6 +39,7 @@ public class CustomerServiceImpl extends BaseServiceImpl<Customer, Integer> impl
             tmp=find(customer.getId());
             tmp.setCustomeremail(customer.getCustomeremail());
             tmp.setCustomeraddress(customer.getCustomeraddress());
+            tmp.setCustomervip(customer.getCustomervip());
             tmp.setCustomername(customer.getCustomername());
             tmp.setCustomernickname(customer.getCustomernickname());
             tmp.setCustomerbirth(customer.getCustomerbirth());
