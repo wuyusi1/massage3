@@ -3,6 +3,7 @@ package net.sppan.base.entity;
 import net.sppan.base.entity.support.BaseEntity;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.sql.Timestamp;
 
 @Entity
@@ -11,7 +12,7 @@ public class Serviceimg extends BaseEntity {
     private Integer id;
     private String imgname;
     private String imgpath;
-    private Timestamp imgdate;
+    private Date imgdate;
     private Integer serviceid;
 
     @Id
@@ -47,11 +48,11 @@ public class Serviceimg extends BaseEntity {
 
     @Basic
     @Column(name = "imgdate")
-    public Timestamp getImgdate() {
+    public Date getImgdate() {
         return imgdate;
     }
 
-    public void setImgdate(Timestamp imgdate) {
+    public void setImgdate(Date imgdate) {
         this.imgdate = imgdate;
     }
 

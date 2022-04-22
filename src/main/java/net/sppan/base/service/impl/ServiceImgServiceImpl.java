@@ -10,7 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
 
 @Service
 public class ServiceImgServiceImpl extends BaseServiceImpl<Serviceimg,Integer> implements IServiceImgService {
@@ -28,12 +28,27 @@ public class ServiceImgServiceImpl extends BaseServiceImpl<Serviceimg,Integer> i
     }
 
     @Override
-    public Set<Serviceimg> findAllByServiceid(Integer serviceid) {
-        return null;
+    public List<Serviceimg> findAllByServiceid(Integer serviceid) {
+        return serviceImgDao.findAllByServiceid(serviceid);
     }
 
     @Override
     public Integer deleteAllByServiceid(Integer serviceid) {
         return serviceImgDao.deleteAllByServiceid(serviceid);
+    }
+
+    @Override
+    public Serviceimg findByimgname(String imgname) {
+        return serviceImgDao.findByImgname(imgname);
+    }
+
+    @Override
+    public void saveOrUpdate(Serviceimg serviceimg) {
+        if(serviceimg.getId()!=null)
+        {
+
+        }else{
+            save(serviceimg);
+        }
     }
 }

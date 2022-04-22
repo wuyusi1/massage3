@@ -145,7 +145,7 @@
                     formatter: function (value, row, index) {
                     	var operateHtml = '<@shiro.hasPermission name="system:user:edit"><button class="btn btn-primary btn-xs" type="button" onclick="edit(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;修改</button> &nbsp;</@shiro.hasPermission>';
                     	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;删除</button> &nbsp;</@shiro.hasPermission>';
-                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="waittoalready(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;提交订单</button></@shiro.hasPermission>';
+                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="imgedit(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;图片详情</button></@shiro.hasPermission>';
                         return operateHtml;
                     }
 			    }]
@@ -155,7 +155,7 @@
         function edit(id){
         	layer.open({
         	      type: 2,
-        	      title: '技师信息修改',
+        	      title: '服务信息修改',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
@@ -178,19 +178,17 @@
        	    	  }
         	    });
         }
-        function waittoalready(id){
-            layer.confirm('确定提交吗?', {icon: 3, title:'提交'}, function(index){
-                $.ajax({
-                    type: "POST",
-                    dataType: "json",
-                    url: "${ctx!}/admin/order/waittoalready/" + id,
-                    success: function(msg){
-                        layer.msg(msg.message, {time: 2000},function(){
-                            $('#table_list').bootstrapTable("refresh");
-                            layer.close(index);
-                        });
-                    }
-                });
+        function imgedit(id){
+            layer.open({
+                type: 2,
+                title: '图片编辑',
+                shadeClose: true,
+                shade: false,
+                area: ['893px', '600px'],
+                content: '${ctx!}/admin/service/imgedit/' + id,
+                end: function(index){
+                    $('#table_list').bootstrapTable("refresh");
+                }
             });
         }
         function del(id){

@@ -13,6 +13,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -38,7 +39,7 @@ public class SserviceServiceImpl extends BaseServiceImpl<Sservice,Integer> imple
     }
 
     @Override
-    public Set<Serviceimg> findAllServiceimg(Integer serviceid) {
+    public List<Serviceimg> findAllServiceimg(Integer serviceid) {
         return serviceImgDao.findAllByServiceid(serviceid);
     }
 
