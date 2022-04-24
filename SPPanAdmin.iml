@@ -13,6 +13,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
+          <factory-entry name="SPPanAdmin" />
           <factory-entry name="entityManagerFactory" value="b535a7f0-b31f-46e0-adf3-7e4cc745c98e" />
           <factory-entry name="noname-a.xml@0" value="b535a7f0-b31f-46e0-adf3-7e4cc745c98e" />
         </datasource-mapping>

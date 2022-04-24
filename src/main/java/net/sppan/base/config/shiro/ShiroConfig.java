@@ -67,6 +67,9 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/assets/**", "anon");
 		
 		filterChainDefinitionMap.put("/admin/login", "anon");
+		filterChainDefinitionMap.put("/customer/login", "anon");
+		//filterChainDefinitionMap.put("/customer/index", "anon");
+		//filterChainDefinitionMap.put("/customer/**", "anon");
 		
 		List<net.sppan.base.entity.Resource> list = resourceService.findAll();
 		for (net.sppan.base.entity.Resource resource : list) {
@@ -91,6 +94,7 @@ public class ShiroConfig {
 //		filterChainDefinitionMap.put("/admin/resource/deleteBatch", "perms[system:resource:deleteBatch]");
 		
 		filterChainDefinitionMap.put("/admin/**", "authc");
+		//filterChainDefinitionMap.put("/customer/**", "authc");
 		shiroFilter.setFilterChainDefinitionMap(filterChainDefinitionMap);
 		return shiroFilter;
 	}

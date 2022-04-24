@@ -48,7 +48,7 @@ public class CustomerServiceImpl extends BaseServiceImpl<Customer, Integer> impl
             update((tmp));
         }else{
             customer.setCustomerdeletestatus(0);
-            customer.setCustomerpwd("111111");
+            //customer.setCustomerpwd("111111");
             save(customer);
         }
     }
